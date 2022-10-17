@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to W-H :)</title>
+    <link rel="stylesheet" href="asset/css/styles.css">
+</head>
+
+
+<body>
+  <div>
+    <a href="landing.html">
+    <img src="images/logo.jpg" alt="logo" id="logo-main">
+  </a>
+  </div>
+
+<nav>
+    <ul>
+        <li><a href="benvenuti.html">Benvenuti</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="member.html">Be A Member</a></li>
+    </ul>
+</nav>
+
+
+<fieldset>
+    <div>
+        <label for="fav-wine">What is your favorite kind of wine?</label>
+        <input id="fav-wines" list="wines" name="fav-wines" required>
+        <datalist id="wines">
+            <option value="Bubbles"></option>
+            <option value="Easy-Drinking"></option>
+            <option value="Medium-Body"></option>
+            <option value="Full-Body"></option>
+            <option value="Spirits-and-Liquors"></option>
+        </datalist>     
+    </div>
+
+    <p>How many time do you drink per week?</p>
+
+    <input id="0-2glass-radio" name="glass-a-day" value="0-2glass" type="radio" required>
+    <label for="0-2glass-radio">0-2 glasses per day</label>
+
+    <input type="radio" name="glass-a-day" id="3-5glass-radio" value="3-5glass" required>
+    <label for="3-5glass-radio">3-5 glasses per day</label>
+
+    <input type="radio" name="bottles-a-week" id="1-2bottles-radio" value="1-2bottles" required>
+    <label for="1-2bottles-radio">1-2 bottles a week</label>
+
+    <input type="radio" name="bottles-a-week" id="3plus-bottles-radio" value="3plus-bottles" required>
+   <label for="3plus-bottles-radio"> 3 or more bottles per week</label>
+   
+   <p>How often do you search on the web what to buy for an event?</p>
+
+   <input id="once-a-week" name="visit-frequency" value="once-a-week" type="radio"
+   required>
+   <label for="once-a-week">Once a week</label>
+
+   <input id="twice-a-week" name="
+   visit-frequency" value="twice-a-week" type="radio" required>
+   <label for="twice-a-week">Twice a week</label>
+
+   <input id="once-a-fortnight" name="visit-frequency" value="once-a-fortnight" type="radio" required>
+   <label for="once-a-fortnight">Once a once-a-fortnight</label>
+
+   <input id="not-often" name="visit-frequency" value="not-often"
+   type="radio" required>
+  <label for="not-often">Not Often</label>
+
+
+  <p> Whic of the following kind of wine and spirits is your favourite?</p>
+
+  <div>
+    <input type="checkbox" id="bubbles-checkbox" name="bubbles">
+    <label for="bubbles-checkbox">Bubbles</label>
+  </div>
+  <div>
+    <input type="checkbox" id="white-rose-checkbox" name="whiteandrose">
+    <label for="white-rose-checkbox">Whites & Rosè</label>
+  </div>
+  <div>
+    <input type="checkbox" name="reds" id="reds-checkbox">
+    <label for="reds-checkbox">Reds</label>
+  </div>
+  <div>
+    <input type="checkbox" name="fortified" id="fortified-checkbox">
+    <label for="fortified-checkbox">Fortified Wines</label>
+  </div>
+
+  <div>
+    <label for="fav-spirits">Spirits</label>
+        <input id="fav-spirits" list="spirits" name="fav-spirits" required>
+        <datalist id="spirits">
+            <option value="Vodka"></option>
+            <option value="Gin"></option>
+            <option value="Rum"></option>
+            <option value="Whiskey"></option>
+            <option value="Tequila"></option>
+        </datalist>  
+  </div>
+</fieldset>
+
+
+<fieldset>
+ <label for="feedback">What do think about our project?</label>
+ <p>What are you looking for in a platform?</p>
+ <p>Do you think wine-hub will be the right platform? </p>
+ <br>
+ <textarea name="feedback" id="feedback" cols="40" rows="5">
+ </textarea>
+ <br>
+<input type="submit" name="send-It" id="send" value="Send">
+<input type="reset" name="reset" id="reset" value="Reset">
+</fieldset>
+
+</body>
+</html>
