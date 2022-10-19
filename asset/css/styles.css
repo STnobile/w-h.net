@@ -56,7 +56,7 @@ nav a:hover {
 
 
 .image-bk {
-      background-image: url("images/register.jpg");
+      background-image: url("../images/register.jpg");
       height: 750px;
       width: 100%;
       background-position: center;
@@ -100,18 +100,18 @@ label {
 /* HERE IS THE STYLE OF THE BENVENUTI PAGE*/
 
 
-section h2 {
+ #heading {
       color: #BF6B63;
       padding: 0.5rem;
       margin-left: 1rem;
 }
 
-section span{ 
+ #sp { 
       font-weight: bolder;
 }
 
 
-section p{
+#pp {
       color: black;
       background-color: white;
       padding-left: 1.5rem;
@@ -196,7 +196,7 @@ section p{
 /* end of benvenuti*/
 
 /* FILE OF BE A MEMBER*/
-/**/
+
 .member{
       padding: 0.5rem;
       border: 3px solid white;
@@ -244,19 +244,19 @@ section p{
 
  /* FILE*/
 
-/*
+
 .hero {
       display: flex;
       justify-content: center;
-      align-items: flex-start;
-      background: #222;
+      align-items: center;
+      background: black;
       min-height: 100%;
 }
 
 .card-grid{
       display: grid;
-      grid-template-columns: repeat(1,1fr);
-      grid-column: 24px;
+      grid-template-columns: repeat(3,1fr);
+      grid-column-gap: 24px;
       max-width: 1200px;
       width: 100%;
 }
@@ -275,5 +275,50 @@ section p{
       bottom: 0%;
       background-size: cover;
       background-position: center;
+      filter: brightness(0.75) saturate(1,2) contrast(0.85);
+      transform: scale(1) translateZ(0);
+      transform-origin: center;
+      transition: filter 200ms linear,transform 200ms linear;
 }
-*/
+
+.card:hover .background { 
+      transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover > .card:not(:hover) .background{ 
+      filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 24px;
+}
+
+.content .category {
+      color: rgba(255, 255, 255, 0.6);
+      text-transform: uppercase;
+      font-size: 0.9rem;
+}
+
+.content .heading {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1.9rem;
+      line-height: 1.4;
+      word-spacing: 100vw;
+      text-shadow: 2px 2px 20px rgba( 0, 0, 0, 0.2);
+}
+
+@media screen and ( max-width: 960px) {
+      .card-grid{
+            grid-template-columns: repeat(1,1fr);
+            
+      }
+}
+
+@media screen and ( max-width: 460px) {
+      .card-grid{
+            grid-template-columns: repeat(1,1fr);
+            
+      }
