@@ -1,0 +1,226 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', sans-serif;
+    box-sizing: border-box;
+}
+.hero1 {
+    height: auto;
+    width: 100%;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color:#F2E8E4 ;
+    text-decoration: none;
+    font: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: #BF6B63;
+    transition: .4s;
+}
+
+.btn {
+    background-color: #BF6B63;
+    color: #F2E8E4;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.btn:hover {
+    transition: scale(1.9);
+    color: #F2E8E4;
+    background-color: #BF6B63;
+}
+
+
+span {
+    font-weight: bold;
+    color: #BF6B63;
+}
+
+/* HERE IT IS THE LOGO DETAILS*/
+
+#bg-black {
+    background-color: black;
+}
+
+.logo {
+   position: absolute;
+   width: 20%;
+   height: auto;
+   border: 3px solid #F2E8E4;
+   border-radius: 20%;
+   left: 50%;
+   top: 50%;
+   right: var(-50% -50%);
+}
+
+#logo-main {
+    position: relative;
+    width: 20%;
+    height: auto;
+    left: 0;
+    top: 0;
+    background-color: black;
+    cursor: pointer;
+}
+
+/* section benvenuti starts here */
+
+.benvenuti {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: white;
+}
+
+.benvenuti img {
+    height: auto;
+    width: 350px;
+}
+.benvenuti-text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.benvenuti-text h2{
+    color: #BF6B63;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.benvenuti-text h5 {
+    color: #BF6B63;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.benvenuti-text p {
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 15px;
+    margin-bottom: 45px;
+}
+
+button {
+    background-color: #BF6B63;
+    color: #F2E8E4;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 12px 30px;
+    border-radius: 20px;
+    transition: .4s;
+}
+
+button:hover {
+    background-color: black;
+    border: 2px solid pink;
+    cursor: pointer;
+}
+
+
+/*section about us starts here */
+
+.service {
+    background-color: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title h2 {
+    color: white;
+    font-size: 30px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box-ab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card-ab {
+    height: 365px;
+    width: 280px;
+    padding: 20px 35px;
+    background: white;
+    border-radius: 30px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card-ab i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #BF6B63;
+}
+
+h5 {
+    color:#BF6B63;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.pro p {
+    color:black;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card-ab .button {
+    background-color: #BF6B63;
+    color: white;
+    text-decoration:none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s; 
+}
+
+.card-ab .button:hover {
+    background-color: black;
+    border: 2px solid pink;
+    cursor: pointer;
+}
