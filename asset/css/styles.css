@@ -32,25 +32,33 @@ nav a:hover {
 }
   
 /* HERE IT IS THE LOGO DETAILS*/
+
+#bg-black {
+      background-color: black;
+}
+
 .logo {
-   background-color: black;
      position: absolute;
      width: 10%;
      height: auto;
      border: 3px solid #F2E8E4;
      border-radius: 20%;
-     left: 45%;
+     left: 46%;
      top: 40%;
+     right: var(-50% -50%);
 }
 
 #logo-main {
       position: relative;
       width: 20%;
       height: auto;
-      left: 0%;
-      top: 0%;
+      left: 0;
+      top: 0;
       background-color: black;
 }
+
+
+
 
 /* register form ---- HERE IS ALL THE STYLES OF REGISTER FORM*/
 
@@ -67,15 +75,12 @@ nav a:hover {
 }
 
 .container {
-      border: 2px solid #BF6B63;
-      background-color:#F2E8E4;
+      display: flex;
+      justify-content: center;
       text-align: center;
-      width: 20%;
-      padding: 0.5rem;
-      position: relative;
-      left: 40%;
-      top: 55%;
-      border-radius: 50px;
+      align-items: center;
+      border-color: 2px solid #BF6B63;
+      background-color: #F2E8E4;
 }
 
 label {
@@ -91,11 +96,12 @@ label {
       margin-top: 0.5rem;
 
 }
-.button1{
+.button1 {
        border-radius: 10px;
        background-color: #BF6B63;
        color:#F2E8E4;
 }
+
 
 /* HERE IS THE STYLE OF THE BENVENUTI PAGE*/
 
@@ -116,6 +122,7 @@ label {
       background-color: white;
       padding-left: 1.5rem;
 }
+
 .benvenutibox {
       background-color: white;
       width: 40%;
@@ -195,54 +202,58 @@ label {
 
 /* end of benvenuti*/
 
-/* FILE OF BE A MEMBER*/
-
-.member{
-      padding: 0.5rem;
-      border: 3px solid white;
-      background-color: white;
-      width: 80%;
-      height: 600px;
-      left: 10%;
-      position:absolute;
-}
-#member1 {
-      background-image: url("/asset/images/member2.jpg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-      width: 100%;
-      height: 100%;
-      position: relative;
-}
 
 /* About us*/
 
 #map {
-      height: 100%;
-      width: 100%;
+      height: 70%;
+      width: 90%;
       border: none;
   }
-  
-  #map-wrapper {
-  
-      height: 500px;
-      margin-bottom: 20px;
+
+#email {
+    padding: 2rem;
+} 
+
+#map-wrapper {
+      width: 90%;
+      height: 80%;
+      position: absolute;
+      left: 10%;
+      top: 40%;
   }
 
   .about-us-style {
-      padding: 0.5rem;
-      width: 100%;
-      height: auto;
+      margin: 2rem;
+      width: 95%;
+      height: 95%;
       background-color: #F2E8E4;
       font-weight: bold;
       font-style: normal;
-      margin: 0.5rem;
+      position: absolute;
   }
- /**/
+
+@media screen and ( max-width: 960px) {
+      .about-us-style{
+            width: 90%;
+            padding: 2rem;
+            height: 90%;
+            position: absolute;
+      }
+}
+
+@media screen and ( max-width: 460px) {
+      .about-us-style{
+            padding: 2rem;
+            width: 90%;
+            height: 90%;
+            position: absolute;   
+      }
+}
 
 
- /* FILE*/
+
+ /* FILE become a member */
 
 
 .hero {
@@ -269,6 +280,7 @@ label {
  
 .background {
       position: absolute;
+      border-radius: 50px;
       top:0%;
       left: 0;
       right: 0%;
@@ -297,7 +309,7 @@ label {
 }
 
 .content .category {
-      color: rgba(255, 255, 255, 0.6);
+      color: rgba(255, 255, 255);
       text-transform: uppercase;
       font-size: 0.9rem;
 }
