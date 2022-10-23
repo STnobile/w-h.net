@@ -87,7 +87,7 @@ span {
     cursor: pointer;
 }
 
-/* section benvenuti starts here */
+/*  style benvenuti starts here */
 
 .benvenuti {
     width: 100%;
@@ -152,7 +152,7 @@ button:hover {
 }
 
 
-/*section about us starts here */
+/* style about us starts here */
 
 .service {
     background-color: #101010;
@@ -224,3 +224,47 @@ h5 {
     border: 2px solid pink;
     cursor: pointer;
 }
+
+
+/* style contac us starts here */
+
+
+.box-cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card-cnt {
+    height: 465px;
+    width: 600px;
+    padding: 20px 35px;
+    background: white;
+    border-radius: 30px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+
+.contact-me {
+     width: 100%;
+     height: 290px;
+     background: #191919;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+}
+
+.contact-me p a  {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+
