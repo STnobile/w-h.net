@@ -68,11 +68,11 @@ span {
 
 .logo {
    position: absolute;
-   width: 20%;
+   width: 10%;
    height: auto;
    border: 3px solid #F2E8E4;
    border-radius: 20%;
-   left: 50%;
+   left: 45%;
    top: 50%;
    right: var(-50% -50%);
 }
@@ -201,6 +201,15 @@ h5 {
     margin-bottom: 15px;
 }
 
+.title h3 {
+    color:#BF6B63;
+    font-size: 40px;
+    font-size: 30px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
 .pro p {
     color:black;
     font-size: 16px;
@@ -248,8 +257,6 @@ h5 {
     text-align: center;
 }
 
-
-
 .contact-me {
      width: 100%;
      height: 290px;
@@ -267,4 +274,178 @@ h5 {
     margin-bottom: 25px;
 }
 
+.p-con {
+    color: #101010;
+    font-weight:lighter;
+    font-size: 15px;
+}
 
+.map-wrapper {
+    border: 2px solid rosybrown;
+    border-radius: 35px;
+}
+
+
+/* FILE become a member */
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    min-height: 100%;
+    height: 700px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    list-style: none;
+    height: 450px;
+}
+
+.background {
+    position: absolute;
+    border-radius: 50px;
+    top:0%;
+    left: 0;
+    right: 0%;
+    bottom: 0%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.75) saturate(1,2) contrast(0.85);
+    transform: scale(1) translateZ(0);
+    transform-origin: center;
+    transition: filter 200ms linear,transform 200ms linear;
+}
+
+.card:hover .background { 
+    transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover > .card:not(:hover) .background{ 
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 24px;
+}
+
+.content .category {
+    color: rgba(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.content .heading {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.9rem;
+    line-height: 1.4;
+    word-spacing: 100vw;
+    text-shadow: 2px 2px 20px rgba( 0, 0, 0, 0.2);
+}
+
+@media screen and ( max-width: 960px) {
+    .card-grid{
+          grid-template-columns: repeat(1,1fr);
+          
+    }
+}
+
+@media screen and ( max-width: 460px) {
+    .card-grid{
+          grid-template-columns: repeat(1,1fr);
+          
+    }
+}
+
+/* standard style start here */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    min-height: 100%;
+    height: 700px;
+}
+
+.card-grid-standard {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-column-gap: 24px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    list-style: none;
+    height: 550px;
+}
+
+.background-standard {
+    position: absolute;
+    border-radius: 50px;
+    top:0%;
+    left: 0;
+    right: 0%;
+    bottom: 0%;
+    background-size: contain;
+    background-position: center;
+    filter: brightness(0.75) saturate(1,2) contrast(0.85);
+    transform: scale(1) translateZ(0);
+    transform-origin: center;
+    transition: filter 200ms linear,transform 200ms linear;
+}
+
+.card:hover .background-standard { 
+    transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover > .card:not(:hover) .background-standard{ 
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.content-ss {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 24px;
+}
+
+.content-ss .category {
+    color: rgba(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.content-ss .heading {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.9rem;
+    line-height: 1.4;
+    word-spacing: 100vw;
+    text-shadow: 2px 2px 20px rgba( 0, 0, 0, 0.2);
+}
+
+
+.pp {
+    position: absolute;
+    color: white;
+    font-size: 1.4rem;
+    display: grid;
+    justify-items: center;
+    align-content:space-around;
+    left: 45%;
+}
