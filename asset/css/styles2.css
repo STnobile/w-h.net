@@ -276,7 +276,7 @@ h5 {
 
 .p-con {
     color: #101010;
-    font-weight:lighter;
+    font-weight:bold;
     font-size: 15px;
 }
 
@@ -383,17 +383,16 @@ h5 {
 
 .card-grid-standard {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-column-gap: 24px;
     max-width: 1200px;
-    width: 100%;
+    width: 50%;
 }
 
 .card {
-    position: relative;
+    position: relative;  
     list-style: none;
-    height: 550px;
-}
+    height: 550px;}
 
 .background-standard {
     position: absolute;
@@ -402,7 +401,7 @@ h5 {
     left: 0;
     right: 0%;
     bottom: 0%;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     filter: brightness(0.75) saturate(1,2) contrast(0.85);
     transform: scale(1) translateZ(0);
@@ -446,6 +445,52 @@ h5 {
     font-size: 1.4rem;
     display: grid;
     justify-items: center;
-    align-content:space-around;
-    left: 45%;
+    align-content: center;
+    justify-content: center;
+    top: 30%;
+    left: 20%;
+}
+
+
+.pp-advance  {
+    position: absolute;
+    color: white;
+    font-size: 1.4rem;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    line-height: 20px;
+    top: 30%;
+    left: 20%;
+}
+
+
+.pp-elite  {
+    position: absolute;
+    color: white;
+    font-size: 1.4rem;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    line-height: 20px;
+    top: 30%;
+    left: 20%;
+}
+
+
+
+@media screen and ( max-width: 960px) {
+    .card-grid-standard{
+          grid-template-columns: repeat(1,1fr);
+          
+    }
+}
+
+@media screen and ( max-width: 460px) {
+    .card-grid-standard{
+          grid-template-columns: repeat(1,1fr);
+          
+    }
 }
