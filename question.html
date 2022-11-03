@@ -10,14 +10,26 @@
 
 
 <body>
-  <div id="bg-black">
+  <div>
     <a href="newbenvenuti.html">
-    <img src="asset/images/logo.jpg" alt="logo" id="logo-main">
+    <img src="asset/images/logo.jpg" alt="logo" class="logo-main">
   </a>
 
+  <div class="hero1">
+      <nav>
+          <ul>
+              <li><a href="newbenvenuti.html">Benvenuti</a></li>
+              <li><a href="#aboutus">About Us</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
 
+            <a href="member.html" class="btn">Join our family</a>
+       </nav>
+    </div>
+
+<div class="white-bg">
 <fieldset>
-    <div>
+    <div class="wine-s">
         <label for="fav-wine">What is your favorite kind of wine?</label>
         <input id="fav-wines" list="wines" name="fav-wines" required>
         <datalist id="wines">
@@ -28,20 +40,20 @@
             <option value="Spirits-and-Liquors"></option>
         </datalist>     
     </div>
-
-    <p>How many time do you drink per week?</p>
+    <section class="wine-s">
+    <p>Where do you by your liquor?</p>
 
     <input id="0-2glass-radio" name="glass-a-day" value="0-2glass" type="radio" required>
-    <label for="0-2glass-radio">0-2 glasses per day</label>
+    <label for="0-2glass-radio">Private dealer</label>
 
     <input type="radio" name="glass-a-day" id="3-5glass-radio" value="3-5glass" required>
-    <label for="3-5glass-radio">3-5 glasses per day</label>
+    <label for="3-5glass-radio">Supermarket</label>
 
     <input type="radio" name="bottles-a-week" id="1-2bottles-radio" value="1-2bottles" required>
-    <label for="1-2bottles-radio">1-2 bottles a week</label>
+    <label for="1-2bottles-radio">Online</label>
 
     <input type="radio" name="bottles-a-week" id="3plus-bottles-radio" value="3plus-bottles" required>
-   <label for="3plus-bottles-radio"> 3 or more bottles per week</label>
+   <label for="3plus-bottles-radio">Through friends</label>
    
    <p>How often do you search on the web what to buy for an event?</p>
 
@@ -90,11 +102,13 @@
             <option value="Whiskey"></option>
             <option value="Tequila"></option>
         </datalist>  
-  </div>
+      </div>
+    </section>
 </fieldset>
-
+<br>
 
 <fieldset>
+  <section class="wine-s">
  <label for="feedback">What do think about our project?</label>
  <p>What are you looking for in a platform?</p>
  <p>Do you think wine-hub will be the right platform? </p>
@@ -104,7 +118,9 @@
  <br>
 <input type="submit" name="send-It" id="send" value="Send">
 <input type="reset" name="reset" id="reset" value="Reset">
+  </section>
 </fieldset>
+</div>
 
 </body>
 </html>

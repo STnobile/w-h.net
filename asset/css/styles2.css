@@ -3,6 +3,7 @@ body{
     padding: 0;
     font-family: 'Times New Roman', sans-serif;
     box-sizing: border-box;
+    background: black;
 }
 .hero1 {
     height: auto;
@@ -62,30 +63,57 @@ span {
 
 /* HERE IT IS THE LOGO DETAILS*/
 
-#bg-black {
+.bg-black {
     background-color: black;
 }
 
-.logo {
-   position: absolute;
-   width: 10%;
-   height: auto;
-   border: 3px solid #F2E8E4;
-   border-radius: 20%;
-   left: 45%;
-   top: 50%;
-   right: var(-50% -50%);
+.logo-container {
+   position: fixed;
+   left: 47%;
+   top: 41%;
 }
 
-#logo-main {
+
+.logo { 
+    border: 3px solid #F2E8E4;
+    border-radius: 20%;
+    width: 15%;
+}
+
+.logo-main {
     position: relative;
     width: 20%;
-    height: auto;
-    left: 0;
-    top: 0;
     background-color: black;
-    cursor: pointer;
 }
+
+@media screen and ( max-width: 960px) {
+
+    .logo-main {
+          position: relative;
+          align-items: center;
+          justify-content: center;
+          width: 30%;
+          left: 35%;
+    }
+}
+
+@media screen and ( max-width: 460px) {
+
+    .bg-black{
+        background-color: black;
+    }
+
+    .logo-main {
+          position: fixed;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          width: 20%;
+          left: 35%;
+    }
+}
+
 
 /*  style benvenuti starts here */
 
@@ -104,10 +132,11 @@ span {
 }
 
 .main {
-    width: 1130px;
+    width: 100%;
     max-width: 95%;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
@@ -163,13 +192,14 @@ button:hover {
 .title h2 {
     color: white;
     font-size: 30px;
-    width: 1130px;
+    width: 100%;
     margin: 30px auto;
     text-align: center;
 }
 
 .box-ab {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     min-height: 400px;
@@ -205,7 +235,7 @@ h5 {
     color:#BF6B63;
     font-size: 40px;
     font-size: 30px;
-    width: 1130px;
+    width: 100%;
     margin: 30px auto;
     text-align: center;
 }
@@ -233,7 +263,6 @@ h5 {
     border: 2px solid pink;
     cursor: pointer;
 }
-
 
 /* style contac us starts here */
 
@@ -294,8 +323,7 @@ h5 {
     justify-content: center;
     align-items: center;
     background: black;
-    min-height: 100%;
-    height: 700px;
+    
 }
 
 .card-grid {
@@ -309,7 +337,8 @@ h5 {
 .card {
     position: relative;
     list-style: none;
-    height: 450px;
+    height: 550px;
+    top: 5%;
 }
 
 .background {
@@ -357,18 +386,34 @@ h5 {
 }
 
 @media screen and ( max-width: 960px) {
-    .card-grid{
-          grid-template-columns: repeat(1,1fr);
-          
+.hero {    
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background: black;
+         min-height: 100%;
     }
-}
 
-@media screen and ( max-width: 460px) {
-    .card-grid{
+.card-grid {
           grid-template-columns: repeat(1,1fr);
-          
+          position: relative;
+          width: 60%;
+          top: 5%;
     }
 }
+    
+
+@media screen and (max-width: 450px) {
+   
+.card-grid {
+          grid-template-columns: repeat(1,1fr);
+          position: relative;
+          width: 60%;
+          top: 5%;
+         }
+    }
+        
+
 
 /* standard style start here */
 
@@ -377,8 +422,6 @@ h5 {
     justify-content: center;
     align-items: center;
     background: black;
-    min-height: 100%;
-    height: 700px;
 }
 
 .card-grid-standard {
@@ -388,11 +431,6 @@ h5 {
     max-width: 1200px;
     width: 50%;
 }
-
-.card {
-    position: relative;  
-    list-style: none;
-    height: 550px;}
 
 .background-standard {
     position: absolute;
@@ -422,6 +460,7 @@ h5 {
     top: 0;
     left: 0;
     padding: 24px;
+    width: 50%;
 }
 
 .content-ss .category {
@@ -466,7 +505,7 @@ h5 {
 }
 
 
-.pp-elite  {
+.pp-elite {
     position: absolute;
     color: white;
     font-size: 1.4rem;
@@ -478,19 +517,35 @@ h5 {
     top: 30%;
     left: 20%;
 }
-
-
-
 @media screen and ( max-width: 960px) {
-    .card-grid-standard{
-          grid-template-columns: repeat(1,1fr);
-          
+    .card-grid-standard {
+        grid-template-columns: repeat(1,1fr);
+          position: relative;
+          width: 60%;
+          top: 5%;
+    }
+
+    .card {
+        position: relative;
+        list-style: none;
+        height: 400px;
+        top: 5%;
     }
 }
 
-@media screen and ( max-width: 460px) {
-    .card-grid-standard{
-          grid-template-columns: repeat(1,1fr);
-          
-    }
+
+/* questions section starts here */
+
+.wine-s{
+    color: black;
+}
+
+.white-bg {
+    background-color: white;
+    margin: 2rem;
+    padding: 10px;
+}
+
+.wine-s p{
+    color: #BF6B63;
 }
