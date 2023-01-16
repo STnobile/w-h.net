@@ -119,7 +119,7 @@ span {
 }
 
 .logo-container {
-   position: fixed;
+   position: absolute;
    left: 47%;
    top: 41%;
 }
@@ -137,7 +137,7 @@ span {
     background-color: black;
 }
 
-@media screen and ( max-width: 960px) {
+@media screen and (max-width:300px) and (max-width: 860px) {
 
     .logo-main {
           position: relative;
@@ -148,7 +148,7 @@ span {
     }
 }
 
-@media screen and ( max-width: 460px) {
+@media screen and (max-width: 300px) and (max-width: 860px) {
 
     .bg-black{
         background-color: black;
@@ -276,12 +276,6 @@ button:hover {
     color: #BF6B63;
 }
 
-h5 {
-    color:#BF6B63;
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
 .title h3 {
     color:#BF6B63;
     font-size: 30px;
@@ -296,7 +290,7 @@ h5 {
     line-height: 27px;
     margin-bottom: 25px;
 }
-
+/* features BOTTOMS
 .card-ab .button {
     background-color: #BF6B63;
     color: white;
@@ -313,6 +307,7 @@ h5 {
     border: 2px solid pink;
     cursor: pointer;
 }
+*/
 
 /* style contac us starts here */
 
@@ -325,8 +320,8 @@ h5 {
 }
 
 .card-cnt {
-    height: 465px;
-    width: 600px;
+    height: 365px;
+    width: 300px;
     padding: 20px 35px;
     background: white;
     border-radius: 30px;
@@ -435,7 +430,7 @@ h5 {
     text-shadow: 2px 2px 20px rgba( 0, 0, 0, 0.2);
 }
 
-@media screen and ( max-width: 960px) {
+@media screen and (max-width: 300px) and ( max-width: 860px) {
 .hero {    
          display: flex;
          justify-content: center;
@@ -453,7 +448,7 @@ h5 {
 }
     
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 560px) {
    
 .card-grid {
           grid-template-columns: repeat(1,1fr);
@@ -495,6 +490,11 @@ h5 {
     transform: scale(1) translateZ(0);
     transform-origin: center;
     transition: filter 200ms linear,transform 200ms linear;
+}
+h5{
+    color:#BF6B63;
+    font-size: 20px;
+
 }
 
 .card:hover .background-standard { 
@@ -567,7 +567,7 @@ h5 {
     top: 30%;
     left: 20%;
 }
-@media screen and ( max-width: 960px) {
+@media screen and ( max-width: 840px) {
     .card-grid-standard {
         grid-template-columns: repeat(1,1fr);
           position: relative;
